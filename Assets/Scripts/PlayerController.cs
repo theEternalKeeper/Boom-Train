@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 15;
+    public float power = 15;
+    public float powerDecrease = 2;
     private Rigidbody2D rb;
     bool buttonAlternate = false;
+    private float force = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,12 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         TrainMovement();
+        rb.AddForce(transform.right * force);
+        force -= powerDecrease;
+        if (force <= 0)
+        {
+            force = 0;
+        }
 
     }
 
@@ -27,14 +35,14 @@ public class PlayerController : MonoBehaviour
         if ( vAxis >= 0.60 && buttonAlternate == false)
         {
             // rb.MovePosition(transfom.position + movement);
-            rb.AddForce(transform.right * speed);
+            force += power;
             buttonAlternate = true;
         }
 
         if (vAxis <= -0.60 && buttonAlternate == true)
         {
             // rb.MovePosition(transfom.position + movement);
-            rb.AddForce(transform.right * speed);
+            force += power;
             buttonAlternate = false;
         }
 
