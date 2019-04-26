@@ -12,6 +12,7 @@ public class PlayerFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         offSet = transform.position - player.transform.position;
     }
 
