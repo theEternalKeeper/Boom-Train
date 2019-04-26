@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     bool buttonAlternate = false;
     private float force = 0;
+    public float obstacleCollision = 15;
+
+    public bool onTrack = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        TrainMovement();
+
+        if (onTrack == true)
+        {
+            TrainMovement();
+        } 
         rb.AddForce(transform.right * force);
         force -= powerDecrease;
         if (force <= 0)
@@ -44,6 +51,29 @@ public class PlayerController : MonoBehaviour
             // rb.MovePosition(transfom.position + movement);
             force += power;
             buttonAlternate = false;
+        }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Track")
+        {
+            onTrack = true;
+        }
+
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            rb.AddForce(transform.right * -obstacleCollision);
+            Destroy(collision.gameObject);
+        }
+
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Track")
+        {
+            onTrack = false;
         }
 
     }
