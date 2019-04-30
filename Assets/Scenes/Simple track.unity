@@ -211,6 +211,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: New SpriteShapeController (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1265,6 +1270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: New SpriteShapeController (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
@@ -2380,6 +2390,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power: 12
   powerDecrease: 3
+  obstacleCollision: 15
+  onTrack: 0
 --- !u!50 &510617935
 Rigidbody2D:
   serializedVersion: 4
@@ -2609,6 +2621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: New SpriteShapeController (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
@@ -3750,6 +3767,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: New SpriteShapeController (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4788,6 +4810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: New SpriteShapeController (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
@@ -6028,6 +6055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: New SpriteShapeController (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
+      objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7082,6 +7114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: New SpriteShapeController (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906302890611890115, guid: e0544525f9a31254488fbcbe70e6ba6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 5695000147449695536, guid: e0544525f9a31254488fbcbe70e6ba6a,
         type: 3}
