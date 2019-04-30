@@ -150,6 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power: 5
   powerDecrease: 1
+  obstacleCollision: 15
+  onTrack: 0
 --- !u!70 &8482127491332162084
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -197,6 +199,7 @@ GameObject:
   - component: {fileID: 8482127491758522799}
   - component: {fileID: 8482127491758522784}
   - component: {fileID: 8482127491758522797}
+  - component: {fileID: 6519036966401822667}
   m_Layer: 0
   m_Name: Cannon Carriage
   m_TagString: Untagged
@@ -303,3 +306,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0.036648806, y: -0.33871618}
   m_Size: {x: 2.582118, y: 0.5348539}
   m_Direction: 1
+--- !u!114 &6519036966401822667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482127491758522785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2370ee32d36fa4a93d5151574179eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannonRB: {fileID: 0}
+  cannonRotation: {fileID: 0}
+  controlled: 0
+  shotLocation: {fileID: 0}
+  shootLocation: {x: 0, y: 0}
+  projectile: {fileID: 0}
+  rb: {fileID: 0}
+  projcollider: {fileID: 0}
+  speed: 0
