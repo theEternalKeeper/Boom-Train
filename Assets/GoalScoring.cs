@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GoalScoring : MonoBehaviour
 {
     public GameObject timer;
@@ -16,6 +17,11 @@ public class GoalScoring : MonoBehaviour
     GameTimer timeScript;
 
     Score endScore;
+
+    private string nextScene;
+
+    public string playLevel, highScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,12 +37,14 @@ public class GoalScoring : MonoBehaviour
         scoreSystem.GetComponent<ScoreSystem_Core>();
 
         timeMultiplier = 5;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         currentTime = timeScript.currentTime;
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

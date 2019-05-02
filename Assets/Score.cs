@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -45,8 +46,13 @@ public class Score : MonoBehaviour
             gameTimer_Script.enabled = false;
             totalScore = (int)timePoints.score + score.currentScore;
             scoreText.text = "Score: " + totalScore;
-
+            if (Input.GetButtonDown("Submit"))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
 
     }
+
+ 
 }
