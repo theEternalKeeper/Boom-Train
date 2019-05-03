@@ -38,14 +38,11 @@ public class CannonController : MonoBehaviour
         if (controlled == true)
         {
 
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetAxis("Horizontal") != 0)
             {
-                transform.Rotate(Vector3.forward * 100 * Time.deltaTime);
+                transform.Rotate(Vector3.forward * (-Input.GetAxis("Horizontal") * 100) * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.Rotate(Vector3.back * 100 * Time.deltaTime);
-            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 //timeoutDestructor = 1;
