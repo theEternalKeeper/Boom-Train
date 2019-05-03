@@ -13,7 +13,7 @@ public class CannonController : MonoBehaviour
 
     public GameObject shotLocation;
     public Vector2 shootLocation;
-
+    public float RotationSpeed;
     public GameObject projectile;
     public Rigidbody2D rb;
     public Collider2D projcollider;
@@ -40,7 +40,7 @@ public class CannonController : MonoBehaviour
 
             if (Input.GetAxis("Horizontal") != 0)
             {
-                transform.Rotate(Vector3.forward * (-Input.GetAxis("Horizontal") * 100) * Time.deltaTime);
+                transform.Rotate(Vector3.forward * (-Input.GetAxis("Horizontal") * RotationSpeed) * Time.deltaTime);
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
