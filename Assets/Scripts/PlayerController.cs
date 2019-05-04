@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     bool buttonAlternate = false;
     private float force = 0;
     public float obstacleCollision = 15;
+    public float maxForce = 50;
 
     public bool onTrack = false;
     // Start is called before the first frame update
@@ -53,6 +54,12 @@ public class PlayerController : MonoBehaviour
             buttonAlternate = false;
         }
 
+        if (force >= maxForce)
+        {
+            force = maxForce;
+        }
+
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
