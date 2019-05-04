@@ -18,6 +18,8 @@ public class CannonController : MonoBehaviour
     public Rigidbody2D rb;
     public Collider2D projcollider;
     public float speed;
+    public float firingRate = 0.5f;
+    float cannonCooldown = 1;
 
     private int timeoutDestructor;
 
@@ -34,6 +36,7 @@ public class CannonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cannonCooldown += Time.deltaTime;
         shootLocation = new Vector2(shotLocation.transform.position.x, shotLocation.transform.position.y);
         if (controlled == true)
         {
@@ -43,12 +46,17 @@ public class CannonController : MonoBehaviour
                 transform.Rotate(Vector3.forward * (-Input.GetAxis("Horizontal") * RotationSpeed) * Time.deltaTime);
             }
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && cannonCooldown >= firingRate)
             {
                 //timeoutDestructor = 1;
                 Launch();
                 //controlled = false;
+                cannonCooldown = 0;
             }
+
+
+
+
 
         }
     }

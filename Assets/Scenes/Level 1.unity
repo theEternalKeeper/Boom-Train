@@ -810,7 +810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1, y: 0.92, z: -10}
+  m_LocalPosition: {x: 1.56, y: 0.92, z: -10}
   m_LocalScale: {x: 1.7402, y: 1.8034, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2335,7 +2335,12 @@ PrefabInstance:
     - target: {fileID: 7363324815935708942, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
       propertyPath: obstacleCollision
-      value: 250
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363324815935708942, guid: 5131675fe2c28cd49bfc176dc05b89ca,
+        type: 3}
+      propertyPath: maxForce
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7363324816579943575, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
@@ -4097,6 +4102,7 @@ MonoBehaviour:
   rb: {fileID: 50000014275329208, guid: a76ed6e913c6ce84490e0f61e724a504, type: 3}
   projcollider: {fileID: 0}
   speed: 0.6
+  firingRate: 1
 --- !u!1001 &1454252915
 PrefabInstance:
   m_ObjectHideFlags: 0
