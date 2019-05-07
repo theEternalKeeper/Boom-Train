@@ -90,79 +90,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_LegacyGenerator: 0
   m_Spline:
-    m_IsOpenEnded: 1
-    m_ControlPoints:
-    - position: {x: -4.6507535, y: -0.32600942, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0, y: 0, z: 0}
-      mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-    - position: {x: 4.7825427, y: -1.9596316, z: 0}
-      leftTangent: {x: -2.313742, y: -0.8336864, z: -0}
-      rightTangent: {x: 2.313742, y: 0.8336864, z: 0}
-      mode: 1
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-    - position: {x: 9.627067, y: 3.703562, z: 0}
-      leftTangent: {x: -1.1568465, y: -0.5140759, z: 0}
-      rightTangent: {x: 1.1568465, y: 0.5140759, z: -0}
-      mode: 1
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-    - position: {x: 13.461825, y: 3.6007025, z: 0}
-      leftTangent: {x: -1.224265, y: 0.32209158, z: -0}
-      rightTangent: {x: 0.4978342, y: -0.13097525, z: 0}
-      mode: 2
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-    - position: {x: 19.166075, y: -3.3381693, z: 0}
-      leftTangent: {x: -3.0625439, y: 1.8016906, z: 0}
-      rightTangent: {x: 1.5305271, y: -0.9004085, z: 0}
-      mode: 2
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-    - position: {x: 28.76752, y: -7.536508, z: 0}
-      leftTangent: {x: -3.0554943, y: 0.108103275, z: 0}
-      rightTangent: {x: 5.865843, y: -0.20753431, z: 0}
-      mode: 2
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-    - position: {x: 37.48139, y: -2.621039, z: 0}
-      leftTangent: {x: 0, y: 0, z: 0}
-      rightTangent: {x: 0, y: 0, z: 0}
-      mode: 0
-      height: 1
-      bevelCutoff: 0
-      bevelSize: 0
-      spriteIndex: 0
-      corner: 0
-  m_SpriteShape: {fileID: 11400000, guid: 09ceb8acabcda6241806fdcb65e1e202, type: 2}
-  m_SplineDetail: 16
-  m_AdaptiveUV: 1
-  m_UpdateCollider: 1
-  m_ColliderDetail: 16
+    m_IsOpenEnded: 0
+    m_ControlPoints: []
+  m_SpriteShape: {fileID: 0}
+  m_FillPixelPerUnit: 100
+  m_StretchTiling: 1
+  m_SplineDetail: 0
+  m_AdaptiveUV: 0
+  m_StretchUV: 0
+  m_WorldSpaceUV: 0
+  m_ColliderDetail: 0
   m_ColliderOffset: 0
-  m_ColliderCornerType: 0
+  m_UpdateCollider: 1
+  m_OptimizeCollider: 1
 --- !u!68 &4039479599807438714
 EdgeCollider2D:
   m_ObjectHideFlags: 0

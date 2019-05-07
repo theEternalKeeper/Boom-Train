@@ -46,7 +46,7 @@ public class CannonController : MonoBehaviour
                 transform.Rotate(Vector3.forward * (-Input.GetAxis("Horizontal") * RotationSpeed) * Time.deltaTime);
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && cannonCooldown >= firingRate)
+            if (Input.GetKeyDown(KeyCode.LeftControl) && cannonCooldown >= firingRate)
             {
                 //timeoutDestructor = 1;
                 Launch();
