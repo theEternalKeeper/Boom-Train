@@ -3,3 +3,5 @@
 .vs/Boom-Train/v15/Server/sqlite3/db.lock
 .vs/Boom-Train/v15/Server/sqlite3/storage.ide-wal
 .vs/Boom-Train/v15/Server/sqlite3/storage.ide-wal
+*.meta
+Temp/UnityLockfile

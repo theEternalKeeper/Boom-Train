@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BottomZone : MonoBehaviour
 {
-    GameObject respawnZone;
+     public GameObject respawnZone;
     
     // Start is called before the first frame update
     void Start()
     {
-        respawnZone = GameObject.Find("ReturnPlace");
+       // respawnZone = GameObject.Find("ReturnPlace");
     }
 
     // Update is called once per frame
