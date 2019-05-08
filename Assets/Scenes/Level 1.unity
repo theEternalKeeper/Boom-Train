@@ -778,8 +778,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: ceb7b990fa19df4429de25deae1be37e, type: 3}
 --- !u!4 &400267442 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4537906916114945198, guid: ceb7b990fa19df4429de25deae1be37e,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 400267441}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &406475864
@@ -910,8 +909,8 @@ Transform:
   m_LocalPosition: {x: 1.5180948, y: 0.255373, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2024967398}
-  - {fileID: 1534312073}
+  - {fileID: 1804860933}
+  - {fileID: 6498492182160232476}
   - {fileID: 400267442}
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -999,7 +998,7 @@ SpriteRenderer:
   m_Size: {x: 29.460001, y: 5.9514766}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &493898562 stripped
@@ -1239,7 +1238,7 @@ SpriteRenderer:
   m_Size: {x: 99.23183, y: 35.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &532167709 stripped
@@ -3957,6 +3956,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5131675fe2c28cd49bfc176dc05b89ca, type: 3}
+--- !u!1 &1138485159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7363324815935708941, guid: 5131675fe2c28cd49bfc176dc05b89ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1138485158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1138485160
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138485159}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.22}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.997476, y: 1.405}
+    newSize: {x: 2.98, y: 1.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1153486759
 GameObject:
   m_ObjectHideFlags: 0
@@ -5206,7 +5237,7 @@ SpriteRenderer:
   m_Size: {x: 14.26, y: 7.942697}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1293069138
@@ -7679,12 +7710,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1454252915}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1534312073 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4537906916114945198, guid: ceb7b990fa19df4429de25deae1be37e,
-    type: 3}
-  m_PrefabInstance: {fileID: 6498492182160232475}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1565371601
 GameObject:
   m_ObjectHideFlags: 0
@@ -8130,6 +8155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceb7b990fa19df4429de25deae1be37e, type: 3}
+--- !u!4 &1804860933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1804860932}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1823915297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8276,7 +8306,7 @@ SpriteRenderer:
   m_Size: {x: 35.27, y: 15.193769}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1915157663 stripped
@@ -8396,12 +8426,6 @@ Transform:
   m_Father: {fileID: 1085017230}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2024967398 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4537906916114945198, guid: ceb7b990fa19df4429de25deae1be37e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1804860932}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2036397455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8570,3 +8594,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ceb7b990fa19df4429de25deae1be37e, type: 3}
+--- !u!4 &6498492182160232476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 6498492182160232475}
+  m_PrefabAsset: {fileID: 0}
