@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Track")
         {
             gameObject.transform.Translate(Vector3.up * -rightHeight);
-            gameObject.transform.Rotate(0, 0, 0);
+            gameObject.transform.Rotate(0, 0, 180);
         }
 
     }

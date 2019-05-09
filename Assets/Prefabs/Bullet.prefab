@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 114000013690922934}
   - component: {fileID: 1776894491747324696}
   - component: {fileID: 3573948130218329142}
+  - component: {fileID: 1160674123186889505}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: CannonBall
@@ -162,3 +163,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 1
+--- !u!114 &1160674123186889505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011176756700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24b142b43117af47b1d89f553ecdcea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 259708492293310879, guid: a119fa528b600264fa29eb4ead6d4e2b, type: 3}
