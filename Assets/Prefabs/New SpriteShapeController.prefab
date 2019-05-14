@@ -90,7 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
@@ -168,6 +167,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 1
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!68 &4039479599807438714
 EdgeCollider2D:
   m_ObjectHideFlags: 0
