@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TargetScipt : MonoBehaviour
 {
+    public GameObject particleeffect;
     GameObject scoreSystem;
     public int scoreValue;
     public ScoreSystem_Core scoreInput;
@@ -28,5 +29,10 @@ public class TargetScipt : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(particleeffect, transform.position, transform.rotation);
     }
 }

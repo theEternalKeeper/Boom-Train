@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CannonBall : MonoBehaviour
 {
+    public GameObject particleEffects;
     public float lifeSpan = 2;
     // Start is called before the first frame update
     void Start()
@@ -28,5 +29,9 @@ public class CannonBall : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+    }
+    private void OnDestroy()
+    {
+        Instantiate(particleEffects, transform.position, transform.rotation);
     }
 }
