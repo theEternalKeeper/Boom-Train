@@ -72,8 +72,12 @@
     <Compile Include="Assets\Scripts\Escape_Menu.cs" />
     <Compile Include="Assets\Scripts\GameTimer.cs" />
     <Compile Include="Assets\Scripts\GoalScoring.cs" />
+    <Compile Include="Assets\Scripts\HighScoreManager.cs" />
+    <Compile Include="Assets\Scripts\HighScoreManagerOld.cs" />
     <Compile Include="Assets\Scripts\Menu_Controller.cs" />
     <Compile Include="Assets\Scripts\Music_Player.cs" />
+    <Compile Include="Assets\Scripts\ObstPartcl.cs" />
+    <Compile Include="Assets\Scripts\particleremover.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerFollow.cs" />
     <Compile Include="Assets\Scripts\SceneControl.cs" />
