@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class particleremover : MonoBehaviour
 {
-    AudioSource audiosource;
+
+    public float pitchmin;
+    public float pitchmax;
+    public AudioSource impactnoise;
     public float time;
     // Start is called before the first frame update
     void Start()
     {
-        //audiosource = GetComponent<AudioSource>;
+        impactnoise.Play(1);
+        impactnoise.pitch = Random.Range(pitchmin, pitchmax); ;
 
 
         Destroy(gameObject, time);
