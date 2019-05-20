@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private float force = 0;
     public float obstacleCollision = 15;
     public float maxForce = 50;
-    public float rightHeight = 3;
+
 
     public bool onTrack = false;
     // Start is called before the first frame update
@@ -86,13 +86,5 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Track")
-        {
-            gameObject.transform.Translate(Vector3.up * -rightHeight);
-            gameObject.transform.Rotate(0, 0, 180);
-        }
 
-    }
 }
