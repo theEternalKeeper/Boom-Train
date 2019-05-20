@@ -12,8 +12,14 @@ public class PlayerController : MonoBehaviour
     public float obstacleCollision = 15;
     public float maxForce = 50;
     public float rightHeight = 3;
-
+    public AudioSource chug1;
+    public float chug1pitchH;
+    public float chug1pitchL;
+    public AudioSource chug2;
+    public float chug2pitchH;
+    public float chug2pitchL;
     public bool onTrack = false;
+    public ParticleSystem smoke;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +51,10 @@ public class PlayerController : MonoBehaviour
         {
             // rb.MovePosition(transfom.position + movement);
             force += power;
+            chug1.Play(1);
+            chug1.pitch = Random.Range(chug1pitchL, chug1pitchH);
+            smoke.Play();
+            
             buttonAlternate = true;
         }
 
@@ -52,6 +62,9 @@ public class PlayerController : MonoBehaviour
         {
             // rb.MovePosition(transfom.position + movement);
             force += power;
+            chug2.Play(1);
+            chug2.pitch = Random.Range(chug2pitchL, chug2pitchH);
+            smoke.Stop();
             buttonAlternate = false;
         }
 
