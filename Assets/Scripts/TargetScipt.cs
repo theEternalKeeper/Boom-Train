@@ -29,6 +29,11 @@ public class TargetScipt : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Player")
+        {
+            scoreInput.currentScore += scoreValue*5;
+            Destroy(gameObject);
+        }
     }
 
     private void OnDestroy()

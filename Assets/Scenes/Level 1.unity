@@ -21773,7 +21773,7 @@ PrefabInstance:
     - target: {fileID: 7363324815935708942, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
       propertyPath: power
-      value: 10
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 7363324815935708942, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
@@ -21783,7 +21783,7 @@ PrefabInstance:
     - target: {fileID: 7363324815935708942, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
       propertyPath: obstacleCollision
-      value: 150
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 7363324815935708942, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
