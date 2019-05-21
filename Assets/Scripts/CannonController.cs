@@ -15,6 +15,8 @@ public class CannonController : MonoBehaviour
     public Vector2 shootLocation;
     public float RotationSpeed;
     public GameObject projectile;
+    GameObject player;
+    Rigidbody2D playerRB;
     public Rigidbody2D rb;
     public Collider2D projcollider;
     public float speed;
@@ -30,6 +32,8 @@ public class CannonController : MonoBehaviour
         cannonRB = GetComponent<Rigidbody2D>();
         //cannon = GetComponent<GameObject> ();
         controlled = true;
+        player = GameObject.Find("Player");
+        playerRB = player.GetComponent<Rigidbody2D>();
 
     }
 
@@ -66,6 +70,7 @@ public class CannonController : MonoBehaviour
         //cannon = GetComponent<GameObject> ();
         GameObject clone = Instantiate(projectile, shootLocation, Quaternion.identity) as GameObject;
         Rigidbody2D clonerb = clone.GetComponent<Rigidbody2D>();
+        clonerb.velocity = playerRB.velocity; 
         clonerb.AddRelativeForce(transform.TransformDirection(new Vector2((Mathf.Cos(transform.rotation.z * Mathf.Deg2Rad) * speed),
                                                                              (Mathf.Sin(transform.rotation.z * Mathf.Deg2Rad) * speed))),
                                                                              ForceMode2D.Impulse);

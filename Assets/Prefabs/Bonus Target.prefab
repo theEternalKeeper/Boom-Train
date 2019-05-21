@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleeffect: {fileID: 6507632061246679262, guid: 1592e1d15a7964546928fc3419f57fa0,
     type: 3}
-  scoreValue: 100
+  scoreValue: 200
   scoreInput: {fileID: 0}
 --- !u!199 &-2091591956308612237
 ParticleSystemRenderer:
