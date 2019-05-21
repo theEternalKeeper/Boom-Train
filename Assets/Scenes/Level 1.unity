@@ -9913,7 +9913,7 @@ GameObject:
   - component: {fileID: 769985677}
   - component: {fileID: 769985676}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9927,7 +9927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769985674}
   m_LocalRotation: {x: -0.7189477, y: -0.01534341, z: 0.017386956, w: 0.69467735}
-  m_LocalPosition: {x: 2.8399992, y: 1.3399992, z: 0.011000156}
+  m_LocalPosition: {x: 2.96, y: 1.82, z: 0.011000156}
   m_LocalScale: {x: 0.049999997, y: 0.05001432, z: 0.10878623}
   m_Children: []
   m_Father: {fileID: 1138485161}
@@ -10184,8 +10184,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
-      maxColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+      minColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
+      maxColor: {r: 0.78300005, g: 0.78300005, b: 0.78300005, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10630,7 +10630,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0.05}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 1.69, y: 0.89, z: 1.22}
     placementMode: 2
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -10939,7 +10939,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 5
+        scalar: 7
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -21904,12 +21904,12 @@ PrefabInstance:
     - target: {fileID: 4860763622540127293, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.13
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 4860763622540127293, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 2425739143927118871, guid: 5131675fe2c28cd49bfc176dc05b89ca,
         type: 3}
